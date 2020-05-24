@@ -1,5 +1,5 @@
 # README
-## This is my how my `fish_prompt.fish` looks like
+## This is my how my fish_prompt looks like
 
 
 
