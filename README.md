@@ -1,5 +1,5 @@
 # README
-## this is my how my `fish_prompt.fish` looks like
+## This is my how my `fish_prompt.fish` looks like
 
 
 
@@ -25,7 +25,7 @@
 - If *`hostname: user ▶ pwd`* doesn't fit on a single line but `pwd` does;
 
 ```
-─┬─[ hostname: pratham ]
+─┬─[ hostname: user ]
  ├─[ pwd ]
  ╰─> 
 ```
@@ -36,7 +36,7 @@
 - If `pwd` is too long to fit onto a single line;
 
 ```
-─┬─[ ringmaster: pratham ]
+─┬─[ hostname: user ]
  ├─[ dirname (prompt_pwd)/↴ ]
  ├─[ ↳ basename (pwd) ]
  ╰─> 
