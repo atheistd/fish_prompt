@@ -1,7 +1,10 @@
 source ~/.config/fish/functions/aliases.fish
 
 function fish_greeting
+    
     neofetch
+    fish --version
+
 end
 
 
@@ -168,6 +171,7 @@ function fish_prompt
     set -l return_color brblack
     test $status = 0; and set return_color bryellow
 
+    echo
     check_len $return_color
 
     function _nim_prompt_wrapper
