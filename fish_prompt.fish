@@ -1,9 +1,9 @@
 source ~/.config/fish/functions/aliases.fish
 
 function fish_greeting
-    
-    neofetch
-    fish --version
+
+	echo
+    neofetch | lolcat
 
 end
 
@@ -41,7 +41,7 @@ function check_len
 
         if test $to_be_adjusted_with_used = false
             if test $final_option_len -lt $COLUMNS
-                print_directory $return_color (dirname (pwd))'/↴'     
+                print_directory $return_color (dirname (pwd))'/↴'
             else
                 print_directory $return_color (dirname (prompt_pwd))'/↴'
             end
@@ -123,7 +123,7 @@ function modified
 end
 
 function custom_git
-    
+
     set return_color $argv[1]
     set proj_name $argv[2]
     set proj_git $argv[3]
@@ -147,7 +147,7 @@ function custom_git
 end
 
 function custom_venv
-    
+
     set return_color $argv[1]
     set venv_name $argv[2]
 
@@ -171,7 +171,7 @@ function fish_prompt
     set -l return_color brblack
     test $status = 0; and set return_color bryellow
 
-    echo
+	echo
     check_len $return_color
 
     function _nim_prompt_wrapper
@@ -255,4 +255,4 @@ set __fish_git_prompt_char_untrackedfiles ' 🔍  '
 set __fish_git_prompt_char_upstream_ahead ' ☝️  '
 set __fish_git_prompt_char_upstream_behind ' 👇  '
 set __fish_git_prompt_char_upstream_diverged ' 🚧  '
-set __fish_git_prompt_char_upstream_equal ' 💯 ' 
+set __fish_git_prompt_char_upstream_equal ' 💯 '
