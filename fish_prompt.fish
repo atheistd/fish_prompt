@@ -1,13 +1,5 @@
 source ~/.config/fish/functions/aliases.fish
 
-function fish_greeting
-
-	echo
-    neofetch | lolcat
-
-end
-
-
 function check_len
 
     set return_color $argv[1]
@@ -171,7 +163,7 @@ function fish_prompt
     set -l return_color brblack
     test $status = 0; and set return_color bryellow
 
-	echo
+    echo
     check_len $return_color
 
     function _nim_prompt_wrapper
@@ -256,3 +248,4 @@ set __fish_git_prompt_char_upstream_ahead ' ☝️  '
 set __fish_git_prompt_char_upstream_behind ' 👇  '
 set __fish_git_prompt_char_upstream_diverged ' 🚧  '
 set __fish_git_prompt_char_upstream_equal ' 💯 '
+
